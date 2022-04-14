@@ -1,0 +1,183 @@
+import { Meta } from '@storybook/addon-docs';
+import Code from './assets/code-brackets.svg';
+import Colors from './assets/colors.svg';
+import Comments from './assets/comments.svg';
+import Direction from './assets/direction.svg';
+import Flow from './assets/flow.svg';
+import Plugin from './assets/plugin.svg';
+import Repo from './assets/repo.svg';
+import StackAlt from './assets/stackalt.svg';
+
+<Meta title="Typography" />
+
+<style>{`
+ .top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ .top h4{
+   font-size: 18px;
+   font-weight: 500;
+ }
+ h1.title{
+   font-weight: 400;
+   margin-bottom: 20px;
+ }
+ .top a{
+    background: #F5F5F5;
+    padding: 10px;
+    border-radius: 2px;
+    color: #26335E;
+    font-size: 16px;
+    font-weight: 500;
+ }
+  table.font-style{
+    width:100%;
+  }
+  table.weight-1 tr:nth-child(1){font-size:18px;}
+  table.weight-1 tr:nth-child(2){font-size:16px;}
+  table.weight-1 tr:nth-child(3){font-size:14px;}
+  table.weight-2 tr:nth-child(1){font-size:13px;}
+  table.weight-2 tr:nth-child(2){font-size:13px;}
+  table.weight-2 tr:nth-child(3){font-size:14px;}
+  table.weight-2 tr:nth-child(4){font-size:13px;}
+  table.weight-2 tr:nth-child(5){font-size:11px;}
+  table.font-style tr{
+    border: none;
+  }
+  table.weight-1 tr td{font-weight:500}
+  table.font-style tr td {
+  padding: 8px;
+  text-align: left;
+  border: 1px dashed #DDD;
+  background: #fff;
+}
+table.font-style tr td:first-child{
+  border-left:0;
+}
+table.font-style tr td:last-child{
+  border-right:0;
+}
+ h3{font-size:24px!important;} 
+.text-style tr th.title-text{
+  font-size:37px;
+  padding-bottom: 20px;
+}
+th.title-text .dark{
+  color:#006E74;
+  font-size:37px;
+}
+th.title-text .light{
+  color:#0097AC;
+  font-size:37px;
+}
+.text-style tr td, .text-style tr th, .text-style tr{
+  border:0;
+  text-align:left;
+  background:transparent!important;
+  pa
+}
+.text-style tr:nth-child(3){
+  font-style:italic;
+}
+.text-style tr:nth-child(4){
+  font-weight:500;
+}
+.text-style tr:nth-child(5){
+  font-weight:500;
+  font-style:italic;
+}
+.text-style tr:nth-child(6){
+  font-weight:700;
+}
+`}</style>
+<div class="top">
+  <h4>FONT STYLES</h4>
+  <a href="">Download From Google Fonts</a>
+</div>
+<h1 class="title">Roboto</h1>
+
+<table class="text-style">
+  <tr>
+    <th class="title-text">Aa<span class="dark">Bb</span><span class="light">Cc</span></th>
+    <th>FONT WEIGHTS</th>
+  </tr>
+  <tr>
+    <td>ABCDEFGHIJKLMNOPQRSTUVWXYZ</td>
+    <td>Regular</td>
+  </tr>
+  <tr>
+    <td>abcdefghijklmnopqrstuvwxyz</td>
+    <td>Regular Italic</td>
+  </tr>
+  <tr>
+    <td>0123456789</td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>~%!@#$%^&*-_=+ </td>
+    <td>Medium Italic</td>
+  </tr>
+  <tr>
+    <td>[]{}()|\/‘’”,.;:?</td>
+    <td>Bold</td>
+  </tr>
+
+</table>
+<h3>SCALE - Font Roboto</h3>
+<table class='font-style weight-1'>
+  <tr>
+    <td>Medium 18px</td>
+    <td>Heading 1</td>
+    <td>Used in all page titles</td>
+  </tr>
+  <tr>
+    <td>Medium 16px</td>
+    <td>Heading 2</td>
+    <td>Sub headings after H1</td>
+  </tr>
+  <tr>
+    <td>Medium 14px</td>
+    <td>Heading 3</td>
+    <td>
+      Sub headings after H3
+      Also used in all Navigation menu Titles
+    </td>
+  </tr>
+</table>
+
+<h4>Body</h4>
+<table class='font-style weight-2'>
+  <tr>
+    <td>Regular 13 Line Height : 18</td>
+    <td>Body 1</td>
+    <td>Body text after headings. e.g list content, Breadcrumbs etc.</td>
+  </tr>
+  <tr>
+    <td>Medium 13 Line Height : 18</td>
+    <td>-</td>
+    <td><em>All Table column titles should be in UPPERCASE</em></td>
+  </tr>
+  <tr>
+    <td>Regular 14</td>
+    <td>Input field text</td>
+    <td>
+      Used in forms for input text fields.
+    </td>
+  </tr>
+  <tr>
+    <td>Regular 13</td>
+    <td>Label</td>
+    <td>
+      Used as a title for input text fields.
+    </td>
+  </tr>
+  <tr>
+    <td>Regular 11</td>
+    <td>Helper text</td>
+    <td>
+      Used in Info tool tip, Input fields errors , Status tags &amp; chips
+    </td>
+  </tr>
+</table>

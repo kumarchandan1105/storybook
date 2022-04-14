@@ -1,0 +1,38 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap';
+
+// main color palette
+$primary: #006e74;
+$secondary: #0097ac;
+$tretiary: #00585d;
+$tera: #008699;
+$darkGrey: #525252;
+
+// Common colors
+$dark:#000000;
+$grey:#919191;
+$light:#dddddd;
+$white:#FFFFFF;
+
+// font-size
+$font-size-base           : 16px;
+$font-size-base-px        : $font-size-base * 1px;
+$font-size-base-narrow    : $font-size-base - 2;
+$font-size-base-narrow-px : $font-size-base-narrow * 1px;
+
+// Weights
+$light-weight:    300;
+$normal-weight:   400;
+$medium-weight:   500;
+$bold-weight:     700;
+
+//  * Z-index variables
+ $z-low                       : 10;
+ $z-mid                       : 100;
+ $z-high                      : 1000;
+
+
+// $font-family-sans-fallback
+$font-family-sans-fallback: 'Arial', sans-serif;
+
+// $font-family-sans
+$font-family-sans: 'Roboto', sans-serif;

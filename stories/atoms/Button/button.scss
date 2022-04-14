@@ -1,0 +1,68 @@
+@import "../../assets/style/variables.scss";
+@import "../../assets/style/mixins.scss";
+
+.storybook-button {
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  color: $white;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  &.fullWidth{
+    width: 100%;
+  }
+}
+
+//primary button-
+.storybook-button--primary {
+  background: $primary 0% 0% no-repeat padding-box;
+}
+
+.storybook-button--primary--disabled {
+  background: $primary 0% 0% no-repeat padding-box !important;
+  opacity: 0.3;
+}
+.storybook-button--primary--disabled:hover {
+  background: $primary 0% 0% no-repeat padding-box !important;
+}
+
+.storybook-button--primary:hover {
+  background: $tretiary 0% 0% no-repeat padding-box;
+}
+
+// primary secondary-
+.storybook-button--primarySecondary {
+  background: $secondary 0% 0% no-repeat padding-box;
+}
+
+.storybook-button--primarySecondary--disabled {
+  background: $secondary 0% 0% no-repeat padding-box !important;
+  opacity: 0.3;
+}
+.storybook-button--primarySecondary--disabled:hover {
+  background: $secondary 0% 0% no-repeat padding-box !important;
+}
+
+.storybook-button--primarySecondary:hover {
+  background: $tera 0% 0% no-repeat padding-box;
+}
+
+//secondary button-
+.storybook-button--secondary {
+  background: $white 0% 0% no-repeat padding-box;
+  // border: 1px solid #c6c6c6;
+  opacity: 1;
+  color: #4d4f5c;
+}
+.storybook-button--secondary--disabled {
+  background: $white 0% 0% no-repeat padding-box !important;
+  opacity: 0.3;
+}
+.storybook-button--secondary--disabled:hover {
+  background: $white 0% 0% no-repeat padding-box !important;
+}
+.storybook-button--secondary:hover {
+  background: $secondary 0% 0% no-repeat padding-box;
+}

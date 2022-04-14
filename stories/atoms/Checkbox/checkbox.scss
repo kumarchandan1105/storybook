@@ -1,0 +1,49 @@
+input[type=checkbox] {
+  display: none;
+
+  &:hover+label:before {
+    border-color: #0097AC;
+  }
+
+  &:checked+label:before {
+    background-color: #0097AC;
+    color: #fff;
+  }
+  
+  &:checked:hover+label:before {
+    border-color: #0097AC;
+    background-color: #008699;
+    color: #fff;
+  }
+
+  &:checked:disabled+label:before {
+    transform: scale(1);
+    background-color: #c6c6c6;
+    border-color: #c6c6c6;
+  }
+
+  &:disabled+label:before {
+    transform: scale(1);
+    border-color: #c6c6c6;
+  }
+
+  +label:before {
+    content: "\2714";
+    border: 1px solid #c6c6c6;
+    border-radius: 4px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding-left: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: 0.2s;
+  }
+
+  +label {
+    display: block;
+    cursor: pointer;
+  }
+
+}

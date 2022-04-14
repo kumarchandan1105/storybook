@@ -1,0 +1,189 @@
+<Meta title="Colors" />
+
+<style>{`
+  table.color-box{
+    width:100%;
+  }
+  table.color-box tr:nth-of-type(2n){
+    background:transparent;
+  }
+  .color-box tr:first-child{
+    border-top:0;
+  }
+  .color-box tr th,
+  .color-box tr td{
+    font-weight:400;
+    border:0;
+    text-align:left;
+    padding:10px;
+  }
+  .color-bg{
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .bg-div{
+    width: 70px;
+    height: 70px;
+    margin-right:10px;
+  }
+  .teal{
+    background: linear-gradient(to bottom, #006E74 62%,#00585D 25%);
+    height: 100px;
+  }
+  .teal-light{
+    background: linear-gradient(to bottom, #0097AC 62%,#008699 25%);
+    height: 100px;
+  }
+  .blue{background: #0097AC;}
+  .orange{background: #FC6A59;}
+  .red{background: #D9434E;}
+  .green{background: #01B27C;}
+  .light-grey{background: #EEEEEE;}
+  .grey{background: #E0E0E0;}
+  .dark-grey{background: #161616;}
+  .list-color p{
+    margin: 0;
+    line-height: 1.4;
+  }
+  p span{
+    display: block;
+  }
+`}</style>
+<table class="color-box">
+  <tr>
+    <th>Color Value</th>
+    <th>Identity</th>
+    <th>Use</th>
+  </tr>
+  <tr>
+    <td>
+    <div class="color-bg">
+      <div class="bg-div teal"></div>
+      <div>
+        <p>Dark teal <span>#006E74</span></p>
+        <p>Hover <span>#00585D</span></p>
+      </div>
+      </div>
+    </td>
+    <td>Primary color</td>
+    <td> 
+      <p>Used in left navigation panel.</p> 
+      <p>Used in all primary buttons.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+  <div class="color-bg">
+    <div class="bg-div teal-light"></div>
+    <div>
+      <p>Light teal <span>#0097AC</span></p>
+      <p>Hover <span>#008699</span></p>
+    </div>
+  </div>
+    </td>
+    <td>Secondary color</td>
+    <td> 
+      <p>Used in left navigation panel.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <div class="color-bg">
+      <div class="bg-div blue"></div>
+      <div>
+        <p>Blue Hex <span>#0097AC</span></p>
+      </div>
+    </div>
+    </td>
+    <td>Information</td>
+    <td> 
+      <p>Information notification, breadcrumbs link, Statistics graphs etc.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <div class="color-bg">
+      <div class="bg-div orange"></div>
+      <div>
+        <p>Orange Hex <span>#FC6A59</span></p>
+      </div>
+    </div>
+    </td>
+    <td>Warning</td>
+    <td> 
+      <p>Warning notification, pending status Statistics graphs etc.</p>
+    </td>
+  </tr>
+   <tr>
+    <td>
+    <div class="color-bg">
+      <div class="bg-div red"></div>
+      <div>
+        <p>Red Hex <span>#D9434E</span></p>
+      </div>
+    </div>
+    </td>
+    <td>Danger, Error</td>
+    <td> 
+      <p>When text is added in the text field</p>
+    </td>
+  </tr>
+   <tr>
+    <td>
+    <div class="color-bg">
+      <div class="bg-div green"></div>
+      <div>
+        <p>Green Hex <span>#01B27C</span></p>
+      </div>
+    </div>
+    </td>
+    <td>Success</td>
+    <td> 
+      <p>Success notification, Approved status, Statistics graphs etc.</p>
+    </td>
+  </tr>
+   <tr>
+    <td>
+    <div class="color-bg">
+      <div class="bg-div light-grey"></div>
+      <div>
+        <p>Light Grey Hex <span>#EEEEEE</span></p>
+      </div>
+    </div>
+    </td>
+    <td>Background</td>
+    <td> 
+      <p>Interface background and grey cards</p>
+    </td>
+  </tr>
+   <tr>
+    <td>
+    <div class="color-bg">
+      <div class="bg-div grey"></div>
+      <div>
+        <p>Grey Hex <span>#E0E0E0</span></p>
+      </div>
+    </div>
+    </td>
+    <td><p>Divider border line</p><p>Disabled button borders</p></td>
+    <td> 
+      <p>Separator lines</p>
+      <p>Disabled input text &amp; text field</p>
+    </td>
+  </tr>
+   <tr>
+    <td>
+    <div class="color-bg">
+      <div class="bg-div dark-grey"></div>
+      <div>
+        <p>Dark Grey Hex <span>#161616</span></p>
+      </div>
+    </div>
+    </td>
+    <td>Active text input</td>
+    <td> 
+      <p>Warning notification, pending status Statistics graphs etc.</p>
+    </td>
+  </tr>
+
+</table>

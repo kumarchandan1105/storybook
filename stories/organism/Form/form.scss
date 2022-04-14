@@ -1,0 +1,13 @@
+@import "../../assets/style/variables.scss";
+@import "../../assets/style/mixins.scss";
+
+form{
+    max-width: 280px;
+    background-color: #F5F5F5;
+    padding: 20px 30px 40px;
+    border-radius: 4px;
+    h1{
+        font-size: 18px;
+        color: $darkGrey;
+    }
+}

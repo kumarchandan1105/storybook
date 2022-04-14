@@ -1,0 +1,50 @@
+@import "../../assets/style/variables.scss";
+.form-control{
+    margin-bottom: 1rem;
+    .input {
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #C6C6C6;
+        border-radius: 4px;
+        padding: 0 10px;
+        &.fullWidth{
+            width: 100%;
+        }
+        &:focus-within{
+            outline: none;
+        }
+        &:focus{
+            border-color: $secondary;
+        }
+        &.error{
+            border-color: red;
+        }
+    }
+    .control-label{
+        color: $darkGrey;
+        font-size: $font-size-base-narrow;
+        margin-bottom: 0.3rem;
+    }
+
+    &.form-horizontal{
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+        .control-label{
+            display: inline-block;
+            max-width: 100%;
+            padding-right: 5px;
+        }
+        input{
+            display: inline-block;
+            width: auto;
+            vertical-align: middle;
+        }
+    }
+    &.form-vertical{
+        .control-label{
+            display: block;
+        }
+    }
+}    
