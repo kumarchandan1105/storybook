@@ -1,0 +1,20 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+  color: $dark;
+  font-size: $font-size-base;
+  font-family: $font-family-sans;
+  font-weight: $normal-weight;
+}
+
+strong, b, th, h1, h2, h3, h4, h5, h6 {
+  font-weight: $medium-weight;
+}
