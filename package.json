@@ -6,7 +6,8 @@
   "scripts": {
     "test": "web-test-runner \"./stories/**/*.test.js\" --node-resolve",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=b101ac5337dc"
   },
   "repository": {
     "type": "git",
